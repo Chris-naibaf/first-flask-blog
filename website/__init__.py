@@ -12,5 +12,13 @@ def create_app():
     # Llave que servirá para encriptar las cookies y datos de sesión.
     app.config['SECRET_KEY'] = 'dev'
 
+    # Importo mis blueprints con mis rutas e información relacionada a mi app.
+    from .views import views
+    from .auth import auth
+
+    # Registro de la rutas en la app
+    app.register_blueprint(views, url_prefix='/')
+    app.register_blueprint(auth, url_prefix='/')
+
     # Se devuelve la app ya inicializada y configurada
     return app  
