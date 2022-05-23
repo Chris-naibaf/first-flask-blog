@@ -1,4 +1,4 @@
-# Este archivo sirve para contener mis rutas que serán las vitas en el frontend.
+# Este archivo sirve para contener mis rutas que serán las vistas en el frontend.
 
 # Gracias a este import podemos separar nuestras rutas y demás de nuestra aplicación
 # para poder acceder a ellas en un archivo diferente y tener todo mas organizado.
